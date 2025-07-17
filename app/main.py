@@ -4,7 +4,7 @@ import uvicorn
 import sys
 from pathlib import Path
 
-"""Чтобы подняться на два уровня вверх по директориям, иначе будет ошибка (No module named 'app')"""
+# Чтобы подняться на два уровня вверх по директориям, иначе будет ошибка (No module named 'app')
 sys.path.append(str(Path(__file__).parent.parent))
 
 from app.api.hotels import router as hotels_router
